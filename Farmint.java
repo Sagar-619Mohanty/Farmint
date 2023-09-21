@@ -80,5 +80,13 @@ public class Farmint {
         System.out.println(farmintInternal.Farmint_Marketing);
         farmintInternal.setFarmint_Sales("Provide all kind of support and help to solve all kind of queries");
         System.out.println(farmintInternal.Farmint_Sales);
+
+        Farmint_App farmintApp = new Farmint_App();
+        farmintApp.setBuyer_app("App for buyers");
+        System.out.println(farmintApp.Buyer_app);
+        farmintApp.setSeller_app("App for sellers");
+        System.out.println(farmintApp.Seller_app);
+        farmintApp.setAll_Customised_App("Customised app for all type of sellers");
+        System.out.println(farmintApp.All_Customised_App);
     }
 }
