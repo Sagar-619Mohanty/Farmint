@@ -88,5 +88,15 @@ public class Farmint {
         System.out.println(farmintApp.Seller_app);
         farmintApp.setAll_Customised_App("Customised app for all type of sellers");
         System.out.println(farmintApp.All_Customised_App);
+
+        Farmint_Account farmintAccount = new Farmint_Account();
+        farmintAccount.setSign_up("Give your details for signup");
+        System.out.println(farmintAccount.Sign_up);
+        farmintAccount.setLogin("Login to go to use the app");
+        System.out.println(farmintAccount.Login);
+        farmintAccount.setProfile("edit,save or delete profile picture. edit name or address or mobile number");
+        System.out.println(farmintAccount.Profile);
+        farmintAccount.setLog_out("logout the account");
+        System.out.println(farmintAccount.Log_out);
     }
 }
