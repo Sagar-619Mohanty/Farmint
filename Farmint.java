@@ -1,74 +1,36 @@
 public class Farmint {
     public static void main(String[] args) {
-        Agro agro = new Agro();
-        System.out.println("Welcome to Farmint!");
-        agro.setVegetables("types of Vegetables");
-        agro.setFruits("types of Fruit");
-        agro.setGroceries("types of Groceries");
-        agro.setVegetables_Price(700-1000);
-        agro.setFruits_Price(100-500);
-        agro.setGroceries_Price(200-800);
-        System.out.println(agro.Vegetables);
-        System.out.println(agro.Fruits);
-        System.out.println(agro.Groceries);
-        System.out.println(agro.Vegetables_Price);
-        System.out.println(agro.fruits_Price);
-        System.out.println(agro.Groceries_Price);
+        Product pr =  new Product();
+        pr.setId(101);
+        System.out.println(pr.id);
+        pr.setProduct_name("");
+        System.out.println(pr.Product_name);
+        pr.setProduct_price(100.00);
+        System.out.println(pr.Product_price);
+        pr.setProduct_Catagory("");
+        System.out.println(pr.Product_Catagory);
+        pr.setProduct_Quantity(1);
+        System.out.println(pr.Product_Quantity);
 
-        Dairy dairy = new Dairy();
-        dairy.setMilk("types of milk");
-        dairy.setMilk_Quantity(1-5);
-        dairy.setMilk_price(20-100);
-        System.out.println(dairy.milk);
-        System.out.println(dairy.milk_Quantity);
-        System.out.println(dairy.milk_price);
-        dairy.setCurd("types of curd");
-        dairy.setCurd_Quantity(1-5);
-        dairy.setCheese_price(10-30);
-        System.out.println(dairy.curd);
-        System.out.println(dairy.curd_Quantity);
-        System.out.println(dairy.curd_price);
-        dairy.setButter("types of butter");
-        dairy.setButter_Quantity(100-1);
-        dairy.setButter_price(20-100);
-        System.out.println(dairy.butter);
-        System.out.println(dairy.butter_Quantity);
-        System.out.println(dairy.butter_price);
-        dairy.setGhee("types of ghee");
-        dairy.setGhee_Quantity(100-1);
-        dairy.setGhee_price(170-1000);
-        System.out.println(dairy.ghee);
-        System.out.println(dairy.ghee_Quantity);
-        System.out.println(dairy.ghee_price);
-        dairy.setCheese("types of cheese");
-        dairy.setCheese_Quantity(50-1);
-        dairy.setCheese_price(40-600);
-        System.out.println(dairy.cheese);
-        System.out.println(dairy.cheese_Quantity);
-        System.out.println(dairy.cheese_price);
-
-        Payments pay = new Payments();
-        pay.setCOD("Manually Cash Payment");
-        System.out.println(pay.COD);
-        pay.setUPI("Payment through UPIs");
-        System.out.println(pay.UPI);
-        pay.setDebit_Card("Payments through Debit-Card");
-        System.out.println(pay.Debit_Card);
-        pay.setCredit_Card("Payments through Credit-Card");
-        System.out.println(pay.Credit_Card);
-
+        Payment pay = new Payment();
+        pay.setAmount(100);
+        System.out.println(pay.amount);
+        for(Payment.payment_methods paymentMethods : Payment.payment_methods.values()){
+            System.out.println(paymentMethods);
+        }
 
         Riders ride = new Riders();
-        ride.setSmall_riders("short-distance riders");
-        System.out.println(ride.Small_riders);
-        ride.setDistance_riders("remote areas riders");
-        System.out.println(ride.Distance_riders);
-        ride.setDairy_riders("more caution should be taken with bottle and carrat");
-        System.out.println(ride.Dairy_riders);
-        ride.setVegetables_riders("should be deliver fresh");
-        System.out.println(ride.Vegetables_riders);
-        ride.setGrocery_riders("all kinds of groceries");
-        System.out.println(ride.Grocery_riders);
+        ride.setRider_id(101);
+        System.out.println(ride.Rider_id);
+        ride.setRider_name("");
+        System.out.println(ride.Rider_name);
+        ride.setRider_vehicle("");
+        System.out.println(ride.Rider_vehicle);
+        ride.setRider_vehicle_no(1234);
+        System.out.println(ride.Rider_vehicle_no);
+        for (Riders.Gender gen : Riders.Gender.values()) {
+            System.out.println(gen);
+        }
 
 
         Farmint_Internal farmintInternal = new Farmint_Internal();
